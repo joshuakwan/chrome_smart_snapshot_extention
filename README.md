@@ -5,7 +5,7 @@ Just make sure to put the page you want to capture at the active state. To stop 
 
 ## How to install
 
-Currently you will have to manually install the extension by cloning this repo or download as a ZIP. Then go to `chrome://extensions/` in your Chrome browser and click `Load unpacked extension`, select the path of the extension on your local machine and then it should appear in the extension list.
+Currently you will have to manually install the extension by cloning this repo or downloading as a ZIP. Then go to `chrome://extensions/` in your Chrome browser and click `Load unpacked extension`, select the path of the extension on your local machine and then it should appear in the extension list.
 
 ## Some debug tips
 
