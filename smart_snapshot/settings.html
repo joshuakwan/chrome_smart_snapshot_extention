@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Smart Snapshot</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+  </head>
+  <body>
+    <h1>Smart Snapshot</h1>
+    <div id="container_settings">
+      Capture interval (in minutes):&nbsp;
+      <input style="width:30px" id="input_interval" value="5"/>
+    </div>
+    <br>
+    <div id="container_button">
+      <button id="btn_snap">start periodically capture</button>
+    </div>
+  </body>
+  <script src="logic.js"></script> 
+</html>
