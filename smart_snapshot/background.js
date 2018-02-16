@@ -21,7 +21,7 @@ function capture() {
             var image_title = 'capture-' + (new Date()).toString() + '.png';
 
             var link = document.createElement('a');
-            link.download = image_title
+            link.download = image_title;
             link.href = canvas.toDataURL();
             link.click();
 
@@ -34,7 +34,7 @@ function capture() {
             }, 
             function(notificationId) {}
         );
-        }
+        };
 
         image.src = data;
     });

@@ -31,16 +31,16 @@ function save_settings() {
 function load_settings() {
     chrome.storage.local.get('interval', function(items) {
         console.log('interval loaded as ', items);
-        if (items['interval'] == null) {
+        if (items.interval == null) {
             document.querySelector('#input_interval').value = default_interval;
         } else {
-            document.querySelector('#input_interval').value = items['interval'];
+            document.querySelector('#input_interval').value = items.interval;
         }
       }); 
 
     chrome.storage.local.get('is_capture_running', function(items) {
         console.log('is_capture_running loaded as ', items);
-        is_capture_running = items['is_capture_running']
+        is_capture_running = items.is_capture_running;
 
         if (is_capture_running == null) {
             is_capture_running = false;

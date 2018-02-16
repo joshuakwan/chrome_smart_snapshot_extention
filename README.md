@@ -1,6 +1,6 @@
 # Introduction
 
-This chrome extension allows you to configure and capture a tab periodically. The capture process is running in the background so you only need to configure the capture interval and click `start`. 
+This chrome extension allows you to configure and capture a tab periodically. The capture process is running in the background so you only need to configure the capture interval and click `start`.
 Just make sure to put the page you want to capture at the active state. To stop the process, click `stop`.
 
 ## How to install
@@ -12,22 +12,22 @@ Currently you will have to manually install the extension by cloning this repo o
 On `chrome://extensions/` choose `Inspect views: background page` to get some valueable info for debugging:
 
 * Get capture interval stored in local Chrome storage:
-    ```
-    chrome.storage.local.get('interval',function(items){ console.log(items['interval']);});
+    ```javascript
+    chrome.storage.local.get('interval',function(items){ console.log(items.interval);});
     ```
 
-* Get capture interval stored in local Chrome storage:
-    ```
-    chrome.storage.local.get('is_capture_running',function(items){ console.log(items['is_capture_running']);});
+* Get the boolean value which indicates the running setting stored in local Chrome storage:
+    ```javascript
+    chrome.storage.local.get('is_capture_running',function(items){ console.log(items.is_capture_running);});
     ```
 
 * Get all alarms (for periodical tasks):
-    ```
+    ```javascript
     chrome.alarms.getAll(function(alarms){ console.log(alarms);});
     ```
 
 * Get all notifications:
-    ```
+    ```javascript
     chrome.notifications.getAll(function(items){ console.log(items);})
     ```
 
